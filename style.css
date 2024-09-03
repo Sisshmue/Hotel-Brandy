@@ -1,0 +1,94 @@
+.background{
+    background-image:url("./images/sea.jpeg");
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Scales the image to cover the entire element */
+   
+}
+
+.contact{
+    background-image:url("./images/palm_tree.jpeg");
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Scales the image to cover the entire element */
+   
+}
+
+
+.header{
+   color: white;
+   font-family:'Droid Serif';
+   font-size: 108px;
+}
+
+.header2{
+    color:white; 
+    font-family:sans-serif;
+    font-size: 27px;
+}
+
+.feature-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.img-text{
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 430px;
+}
+
+.features-text{
+    text-align: justify !important ;
+    font-family:sans-serif !important ;
+    font-size: 15px !important;
+    max-width: 300px !important ;
+    font-weight:100 !important;
+    font-weight: 100 !important;
+}
+
+@media(max-width:1500px){
+    .feature-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .img-text{
+        flex-direction: row;
+        max-width:100% ;
+        gap: 20px;
+    }
+}
+
+@media(max-width:750px) {
+    .img-text{
+        flex-direction: column;
+        
+    }
+
+    .f-t{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-left: 5px;
+    }
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #7FA5BA;
+    --bs-btn-border-color: #7FA5BA;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
